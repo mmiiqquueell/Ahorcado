@@ -1,2 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_XAzL4CqMEeesEvuwX7Qp2w" name="RootElement"/>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_XAzL4CqMEeesEvuwX7Qp2w" name="RootElement">
+  <packagedElement xmi:type="uml:Class" xmi:id="__ifnACqOEeesEvuwX7Qp2w" name="Tablero">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_33FlECqPEeesEvuwX7Qp2w" name="Dibujar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nXfmICqPEeesEvuwX7Qp2w" name="Partida">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ADN5ACqQEeesEvuwX7Qp2w" name="letras" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EChar"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cZGwgCqQEeesEvuwX7Qp2w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cZLB8CqQEeesEvuwX7Qp2w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lCNUUCqQEeesEvuwX7Qp2w" name="palabras" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nZYnECqQEeesEvuwX7Qp2w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nZfUwCqQEeesEvuwX7Qp2w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OxkuYCqREeesEvuwX7Qp2w" name="palabraSeleccionada" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_T-dC8CqREeesEvuwX7Qp2w" name="palabraSaved" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EChar"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZuJwsCqREeesEvuwX7Qp2w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZuLl4CqREeesEvuwX7Qp2w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ct4RMCqREeesEvuwX7Qp2w" name="palabraUser" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EChar"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hEJt4CqREeesEvuwX7Qp2w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hELjECqREeesEvuwX7Qp2w" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_euUUYCqQEeesEvuwX7Qp2w" name="comprobarLetras"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qz9QgCqQEeesEvuwX7Qp2w" name="selectorPalabra"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_vV6YwCqQEeesEvuwX7Qp2w" name="finPartida"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6CpoQCqQEeesEvuwX7Qp2w" name="intentos"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_IVrpACqREeesEvuwX7Qp2w" name="tiempo"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8090UCqPEeesEvuwX7Qp2w" memberEnd="_81DT4CqPEeesEvuwX7Qp2w _81DT4SqPEeesEvuwX7Qp2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_81A3oCqPEeesEvuwX7Qp2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_81BesCqPEeesEvuwX7Qp2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_81DT4SqPEeesEvuwX7Qp2w" name="partida" type="_nXfmICqPEeesEvuwX7Qp2w" aggregation="composite" association="_8090UCqPEeesEvuwX7Qp2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_81DT4CqPEeesEvuwX7Qp2w" name="tablero" type="__ifnACqOEeesEvuwX7Qp2w" association="_8090UCqPEeesEvuwX7Qp2w"/>
+  </packagedElement>
+</uml:Model>
