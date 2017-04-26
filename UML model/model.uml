@@ -4,6 +4,17 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_FKEzMCqSEeesEvuwX7Qp2w" name="textoInformativo" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_l_FaACqVEeesEvuwX7Qp2w" name="Intentos" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qqQvsCqVEeesEvuwX7Qp2w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qqTzACqVEeesEvuwX7Qp2w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rXtEgCqVEeesEvuwX7Qp2w" name="palabraDesvelada" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vm2lgCqVEeesEvuwX7Qp2w" name="tiempo" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_nXfmICqPEeesEvuwX7Qp2w" name="Partida">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_ADN5ACqQEeesEvuwX7Qp2w" name="letras" visibility="private">
@@ -34,12 +45,16 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NJedQCqTEeesEvuwX7Qp2w" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NJg5gCqTEeesEvuwX7Qp2w" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hvl6wCqVEeesEvuwX7Qp2w" name="Desvelado" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_euUUYCqQEeesEvuwX7Qp2w" name="comprobarLetras"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qz9QgCqQEeesEvuwX7Qp2w" name="selectorPalabra"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_vV6YwCqQEeesEvuwX7Qp2w" name="finPartida"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_6CpoQCqQEeesEvuwX7Qp2w" name="intentos"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_IVrpACqREeesEvuwX7Qp2w" name="tiempo"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_sPNboCqSEeesEvuwX7Qp2w" name="descomponer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_beZCcCqVEeesEvuwX7Qp2w" name="dibujarLetrasCorrectas"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_8090UCqPEeesEvuwX7Qp2w" memberEnd="_81DT4CqPEeesEvuwX7Qp2w _81DT4SqPEeesEvuwX7Qp2w">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_81A3oCqPEeesEvuwX7Qp2w" source="org.eclipse.papyrus">
