@@ -6,16 +6,16 @@
       <layoutConstraint xmi:type="notation:Location" xmi:id="__iow8CqOEeesEvuwX7Qp2w" y="5"/>
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="__iow8SqOEeesEvuwX7Qp2w" type="Class_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_FKMvACqSEeesEvuwX7Qp2w" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="model.uml#_FKEzMCqSEeesEvuwX7Qp2w"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_FKMvASqSEeesEvuwX7Qp2w"/>
+      </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="__iow8iqOEeesEvuwX7Qp2w"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="__iow8yqOEeesEvuwX7Qp2w"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="__iow9CqOEeesEvuwX7Qp2w"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="__iow9SqOEeesEvuwX7Qp2w"/>
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="__iow9iqOEeesEvuwX7Qp2w" type="Class_OperationCompartment">
-      <children xmi:type="notation:Shape" xmi:id="_33OvACqPEeesEvuwX7Qp2w" type="Operation_ClassOperationLabel">
-        <element xmi:type="uml:Operation" href="model.uml#_33FlECqPEeesEvuwX7Qp2w"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_33OvASqPEeesEvuwX7Qp2w"/>
-      </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="__iow9yqOEeesEvuwX7Qp2w"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="__iow-CqOEeesEvuwX7Qp2w"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="__iow-SqOEeesEvuwX7Qp2w"/>
@@ -48,13 +48,17 @@
         <element xmi:type="uml:Property" href="model.uml#_OxkuYCqREeesEvuwX7Qp2w"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_OxsqMSqREeesEvuwX7Qp2w"/>
       </children>
-      <children xmi:type="notation:Shape" xmi:id="_T-iigCqREeesEvuwX7Qp2w" type="Property_ClassAttributeLabel">
-        <element xmi:type="uml:Property" href="model.uml#_T-dC8CqREeesEvuwX7Qp2w"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_T-iigSqREeesEvuwX7Qp2w"/>
+      <children xmi:type="notation:Shape" xmi:id="_82y48CqSEeesEvuwX7Qp2w" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="model.uml#_82syUCqSEeesEvuwX7Qp2w"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_82y48SqSEeesEvuwX7Qp2w"/>
       </children>
-      <children xmi:type="notation:Shape" xmi:id="_ct-X0CqREeesEvuwX7Qp2w" type="Property_ClassAttributeLabel">
-        <element xmi:type="uml:Property" href="model.uml#_ct4RMCqREeesEvuwX7Qp2w"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ct-X0SqREeesEvuwX7Qp2w"/>
+      <children xmi:type="notation:Shape" xmi:id="_C-LG4CqTEeesEvuwX7Qp2w" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="model.uml#_C-FnUCqTEeesEvuwX7Qp2w"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_C-LG4SqTEeesEvuwX7Qp2w"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_LDhdYCqTEeesEvuwX7Qp2w" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="model.uml#_LDb90CqTEeesEvuwX7Qp2w"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LDhdYSqTEeesEvuwX7Qp2w"/>
       </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="_nXipdCqPEeesEvuwX7Qp2w"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_nXipdSqPEeesEvuwX7Qp2w"/>
@@ -81,6 +85,10 @@
       <children xmi:type="notation:Shape" xmi:id="_IVv6cCqREeesEvuwX7Qp2w" type="Operation_ClassOperationLabel">
         <element xmi:type="uml:Operation" href="model.uml#_IVrpACqREeesEvuwX7Qp2w"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_IVv6cSqREeesEvuwX7Qp2w"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_sPcsMCqSEeesEvuwX7Qp2w" type="Operation_ClassOperationLabel">
+        <element xmi:type="uml:Operation" href="model.uml#_sPNboCqSEeesEvuwX7Qp2w"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sPcsMSqSEeesEvuwX7Qp2w"/>
       </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="_nXipeSqPEeesEvuwX7Qp2w"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_nXipeiqPEeesEvuwX7Qp2w"/>
