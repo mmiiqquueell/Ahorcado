@@ -17,11 +17,11 @@ public class Palabra {
 	 * 
 	 * @return Devuelve una palabra aleatoria.
 	 */
-	public String elegirPalabra() {
+	public void elegirPalabra() {
 		String[] palabras = { "coches", "animales", "alumnos", "profesores", "juegos", "pato", "taladro", "mago",
 				"colores", "ordenador", "caseta", "asignatura" };
 		String elegida = palabras[(int) (Math.round(Math.random() * (palabras.length - 1)))];
-		return elegida;
+		palabraOculta = elegida;
 	}
 
 	/**
