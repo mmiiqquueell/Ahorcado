@@ -11,7 +11,7 @@ public class Palabra {
 	/**
 	 * Son las letras que el jugador ha dicho pero no estaban en la palabra
 	 */
-	private char[] letrasFallidas;
+	private char[] letrasFallidas = new char[NUM_LETRAS_ABECEDARIO];
 
 	/**
 	 * 
@@ -36,7 +36,7 @@ public class Palabra {
 				return true;
 			}
 		}
-		for (int i = 0; i < letrasDescubiertas.length; i++) {
+		for (int i = 0; i < letrasFallidas.length; i++) {
 			if (letra == letrasFallidas[i]) {
 				return true;
 			}
@@ -85,6 +85,36 @@ public class Palabra {
 	 * fallidas
 	 */
 	public void mostrarResultados() {
+
+		char[] descompuesta = palabraOculta.toCharArray();
+		System.out.println("Progreso:");
+		for (int i = 0; i < letrasDescubiertas.length; i++) {
+			boolean estaEnDescubiertas = false;
+			for (int j = 0; j < letrasDescubiertas.length; j++) {
+				if (descompuesta[i] == letrasDescubiertas[j]) {
+					estaEnDescubiertas = true;
+					break;
+				}
+			}
+			if (estaEnDescubiertas) {
+				System.out.println(descompuesta[i]);
+			} else {
+				System.out.println("_");
+			}
+		}
+
+		System.out.println("\nAciertos: ");
+		for (int i = 0; i < letrasDescubiertas.length; i++) {
+			if (letrasDescubiertas[i] != '\u0000') {
+				System.out.println(letrasDescubiertas[i] + " - ");
+			}
+		}
+		System.out.println("\nFallos: ");
+		for (int i = 0; i < letrasFallidas.length; i++) {
+			if (letrasFallidas[i] != '\u0000') {
+				System.out.println(letrasFallidas[i] + " - ");
+			}
+		}
 	}
 
 	/**
@@ -93,7 +123,7 @@ public class Palabra {
 	 * @return Devuelve si hemos ganando o perdido
 	 */
 	public boolean comprobarSiGanado() {
-		boolean estanTodas = false;
+		boolean estanTodas = true;
 		char[] descompuesta = palabraOculta.toCharArray();
 		for (int i = 0; i < letrasDescubiertas.length; i++) {
 			boolean estaEnDescubiertas = false;
@@ -104,7 +134,7 @@ public class Palabra {
 				}
 			}
 			if (!estaEnDescubiertas) {
-				estanTodas = true;
+				estanTodas = false;
 				break;
 			}
 		}
