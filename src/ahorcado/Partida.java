@@ -23,18 +23,28 @@ public class Partida {
 		while (!comprobarFinal() && noAcabado) {
 			switch (menuPrincipal()) {
 			case 1:
-				palabra.comprobarLetra(pedirLetra());
+				entrada.nextLine();
+				if (palabra.comprobarLetra(pedirLetra()) == false) {
+					horca.incrementarFallo();
+				}
+				if (horca.getFallos() == 6) {
+					System.out.println("Has perdido");
+					System.exit(0);
+				}
 				mostrarProgreso();
 				break;
 			case 2:
+				entrada.nextLine();
 				if (resolver()) {
 					System.out.println("Has ganado");
 				} else {
+
 					System.out.println("Has perdido");
 					noAcabado = false;
 				}
 				break;
 			case 3:
+				entrada.nextLine();
 				System.exit(0);
 			default:
 				continue;
@@ -47,10 +57,10 @@ public class Partida {
 	/**
 	 * Menu de seleccion
 	 * 
-	 * @return
+	 * @return Devuelve menu
 	 */
 	public static int menuPrincipal() {
-		System.out.println("Pulse 1 para introducir letra\nPulse 2 para resolver palabra:\nPulse 3 para salir\n");
+		System.out.println("\n\n\nPulse 1 para introducir letra\nPulse 2 para resolver palabra:\nPulse 3 para salir\n");
 		return entrada.nextInt();
 	}
 

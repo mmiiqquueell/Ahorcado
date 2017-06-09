@@ -13,7 +13,7 @@ public class Horca {
 
 	/** Indica la cantidad de fallos **/
 	public void dibujar() {
-		System.out.println("Fallos: " + getFallos() + "/6 \n");
+		System.out.println("\nFallos: " + getFallos() + "/6 \n");
 	}
 
 	/**
@@ -24,15 +24,17 @@ public class Horca {
 	}
 
 	/**
-	 * Comprueba si hemos perdido la partida
 	 * 
-	 * @return
+	 * 
+	 * @return Comprueba si hemos perdido la partida
 	 */
 	public boolean comprobarSiPerdido() {
 		return (getFallos() == MAX_FALLOS);
 	}
 
-	/** Devuelve los fallos **/
+	/**
+	 * @return Devuelve los fallos
+	 **/
 	public int getFallos() {
 		return fallos;
 	}

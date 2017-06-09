@@ -15,7 +15,7 @@ public class Palabra {
 
 	/**
 	 * 
-	 * @return Devuelve una palabra aleatoria.
+	 * Devuelve una palabra aleatoria.
 	 */
 	public void elegirPalabra() {
 		String[] palabras = { "coches", "animales", "alumnos", "profesores", "juegos", "pato", "taladro", "mago",
@@ -87,8 +87,8 @@ public class Palabra {
 	public void mostrarResultados() {
 
 		char[] descompuesta = palabraOculta.toCharArray();
-		System.out.println("Progreso:");
-		for (int i = 0; i < letrasDescubiertas.length; i++) {
+		System.out.println("\nProgreso:");
+		for (int i = 0; i < descompuesta.length; i++) {
 			boolean estaEnDescubiertas = false;
 			for (int j = 0; j < letrasDescubiertas.length; j++) {
 				if (descompuesta[i] == letrasDescubiertas[j]) {
@@ -97,22 +97,22 @@ public class Palabra {
 				}
 			}
 			if (estaEnDescubiertas) {
-				System.out.println(descompuesta[i]);
+				System.out.print(descompuesta[i]);
 			} else {
-				System.out.println("_");
+				System.out.print("_");
 			}
 		}
 
-		System.out.println("\nAciertos: ");
+		System.out.println("\n\nAciertos: ");
 		for (int i = 0; i < letrasDescubiertas.length; i++) {
 			if (letrasDescubiertas[i] != '\u0000') {
-				System.out.println(letrasDescubiertas[i] + " - ");
+				System.out.print(letrasDescubiertas[i] + " - ");
 			}
 		}
-		System.out.println("\nFallos: ");
+		System.out.println("\n\nFallos: ");
 		for (int i = 0; i < letrasFallidas.length; i++) {
 			if (letrasFallidas[i] != '\u0000') {
-				System.out.println(letrasFallidas[i] + " - ");
+				System.out.print(letrasFallidas[i] + " - ");
 			}
 		}
 	}
@@ -125,7 +125,7 @@ public class Palabra {
 	public boolean comprobarSiGanado() {
 		boolean estanTodas = true;
 		char[] descompuesta = palabraOculta.toCharArray();
-		for (int i = 0; i < letrasDescubiertas.length; i++) {
+		for (int i = 0; i < descompuesta.length; i++) {
 			boolean estaEnDescubiertas = false;
 			for (int j = 0; j < letrasDescubiertas.length; j++) {
 				if (descompuesta[i] == letrasDescubiertas[j]) {
@@ -142,10 +142,11 @@ public class Palabra {
 	}
 
 	/**
-	 * Comprueba si la palabra propuesta por el jugador coincide con la palabra
-	 * oculta (quiero resolver)
+	 * 
 	 * 
 	 * @param palabra
+	 *            Comprueba si la palabra propuesta por el jugador coincide con
+	 *            la palabra oculta (quiero resolver)
 	 * @return Adivinada es verdadero si la palabra coincide con la que
 	 *         buscábamos
 	 */
